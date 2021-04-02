@@ -86,7 +86,24 @@ void draw() {
 
     // Game Run
   case GAME_RUN:
-    //keyboard pressed
+
+    image(bgImg, 0, 0);
+    image(soilImg, 0, x*2);
+
+    //grass
+    noStroke();
+    fill(124, 204, 25);  
+    rect(0, x*2-15, x*8, 15);
+
+    //sun
+    fill(225, 225, 0);  
+    ellipse(x*59/8, x*5/8, x*13/8, x*13/8);
+    fill(253, 184, 19);
+    ellipse(x*59/8, x*5/8, x*3/2, x*3/2);
+
+    image(groundhogImg, hogX, hogY);
+    
+        //keyboard pressed
     if (upPressed) {
       hogY -= 80/15 ;
     }
@@ -103,21 +120,6 @@ void draw() {
       image(groundhogRightImg, hogX, hogY);
     }
      
-    image(bgImg, 0, 0);
-    image(soilImg, 0, x*2);
-
-    //grass
-    noStroke();
-    fill(124, 204, 25);  
-    rect(0, x*2-15, x*8, 15);
-
-    //sun
-    fill(225, 225, 0);  
-    ellipse(x*59/8, x*5/8, x*13/8, x*13/8);
-    fill(253, 184, 19);
-    ellipse(x*59/8, x*5/8, x*3/2, x*3/2);
-
-    image(groundhogImg, hogX, hogY);
 
     // soldier
     y+=4; // y=y+4
