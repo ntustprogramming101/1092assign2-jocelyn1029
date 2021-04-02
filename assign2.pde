@@ -110,15 +110,15 @@ void draw() {
     }
     if (downPressed) {
       hogY += 80/15;
-      //image(groundhogDownImg, hogX, hogY);
+      image(groundhogDownImg, hogX, hogY);
     }
     if (leftPressed) {
       hogX -= 80/15;
-      //image(groundhogLeftImg, hogX, hogY);
+      image(groundhogLeftImg, hogX, hogY);
     }
     if (rightPressed) {
       hogX += 80/15;
-      //image(groundhogRightImg, hogX, hogY);
+      image(groundhogRightImg, hogX, hogY);
     }
      
 
