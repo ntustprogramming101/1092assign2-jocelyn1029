@@ -109,15 +109,15 @@ void draw() {
     }
     if (downPressed) {
       hogY += 80/15;
-      image(groundhogDownImg, hogX, hogY);
+      //image(groundhogDownImg, hogX, hogY);
     }
     if (leftPressed) {
       hogX -= 80/15;
-      image(groundhogLeftImg, hogX, hogY);
+      //image(groundhogLeftImg, hogX, hogY);
     }
     if (rightPressed) {
       hogX += 80/15;
-      image(groundhogRightImg, hogX, hogY);
+      //image(groundhogRightImg, hogX, hogY);
     }
      
 
@@ -132,13 +132,13 @@ void draw() {
     // groundhog move
     if (hogX <= 0 ) {
       hogX = 0;
-    } else if (hogX >= width ) {
+    } else if (hogX >= width-80 ) {
       hogX = x*7;
     }
 
     if (hogY <= x) {
       hogY = x;
-    } else if (hogY >= height) {
+    } else if (hogY >= height-80) {
       hogY = x*5;
     }
 
