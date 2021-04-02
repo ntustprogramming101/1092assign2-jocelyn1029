@@ -106,6 +106,7 @@ void draw() {
         //keyboard pressed
     if (upPressed) {
       hogY -= 80/15 ;
+      image(groundhogImg, hogX, hogY);
     }
     if (downPressed) {
       hogY += 80/15;
